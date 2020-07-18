@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   # config.vm.provision "file", source: "/Users/charlmert/.ssh/id_rsa_vagrant.pub", destination: "~/.ssh/authorized_keys"
 
   # Must specified `id: "ssh"` in order to override the default forwarded SSH port.
-  config.vm.network :forwarded_port, guest: 22, host: 2211, id: "ssh"
+  config.vm.network :forwarded_port, guest: 22, host: 2221, id: "ssh"
 
   # config.vm.network "forwarded_port", guest: 80, host: 8085
   # config.vm.network "forwarded_port", guest: 443, host: 8086
